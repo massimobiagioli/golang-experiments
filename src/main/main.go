@@ -68,6 +68,12 @@ func main() {
 		return strings.ToUpper(k)
 	}
 	fmt.Println("Transformer: ", tm["t1"]("mario"))	
+	
+	// Self-executing function
+	sefresult := func(k string) string {
+		return strings.ToUpper(k)
+	}("pippo")
+	fmt.Println("Result: ", sefresult)
 }
 
 func CalcolaArea(forma utility.FormaGeometrica) int {

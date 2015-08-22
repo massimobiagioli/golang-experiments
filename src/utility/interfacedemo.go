@@ -10,5 +10,5 @@ type FormaGeometrica interface {
 }
 
 func (q Quadrato) Area() int {
-	return q.X * q.Y / 2 
+	return q.X * q.Y
 }
